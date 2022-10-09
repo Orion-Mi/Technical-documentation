@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <i class="fa fa-amazon"></i>
+        <div class="out">
+            <div class="top-nav">
+                <div class="logo">
+                    <h1>amazon appstore</h1>
+                </div>
+
+                <div class="search">
+                    <form action="#">
+                        <input type="text"
+                            placeholder=" Search..."
+                            name="search">
+                        <button>
+                            <i class="material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Developer Console</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                    <div id="profile">
+                        <i class="material-icons">account_circle</i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Engage</a></li>
+                    <li><a href="#">Monetize</a></li>
+                    <li><a href="#">Test</a></li>
+                    <li><a href="#">Submit</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="sidebar" id="navbar">
+            <div class="app-search">
+                <form action="#">
+                    <input type="text"
+                        placeholder=" Search Appstore Docs(BETA)"
+                        name="search">
+                    <button>
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+            </div>
+            
+                <div id="main">
+                    <h1>Amazon Fire TV</h1>
+                </div>
+            
+                <div id="sub-head">
+                    <h3>Overview</h3>
+                    <a href="#introduction">Getting Started Developing Apps and Games for Fire TV</a>
+                </div>
+           
+            <ul>
+                <li><a href="#Options_for_Building_Fire_TV_Apps" class="nav-link">Options for Building Fire TV Apps</a></li>
+                <li><a href="#Android_App_Development_for_Amazon_Fire_TV" class="nav-link">Android App Development for Amazon Fire TV</a></li>
+                <li><a href="#HTML5_Web_App_Development_for_Amazon_Fire_TV" class="nav-link">HTML5 Web App Development for Amazon Fire TV</a></li>
+                <li><a href="#APIs_for_Your_Amazon_Fire_TV_App" class="nav-link">APIs for Your Amazon Fire TV App</a></li>
+                <li><a href="#Device_and_Media_Specifications" class="nav-link">Device and Media Specifications</a></li>
+                <li><a href="#Amazon_Fire_TV_Forums" class="nav-link">Amazon Fire TV Forums</a></li>
+                <li><a href="#References" class="nav-link">References</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <h1>Introduction</h1>
+                <h2><a href="#navbar"> Started Developing Apps and Games for Fire TV</a></h2>
+                <p>When developing apps for Fire TV, you can choose from a variety of frameworks and options depending on your skillset <code>(Java developer, web developer, or content developer)</code>, your platform preference <code>(Android or HTML5 web app)</code>, the features you want (advertising, authentication, etc.), and more. The information here will help you get started in building an app.</p>  
+            </section>
+            <section class="main-section" id="Options_for_Building_Fire_TV_Apps">
+                <h2><a href="#navbar">Options for Building Fire TV Apps</a></h2>
+                <p>To build an app for Amazon Fire TV, you have several options:</p>
+                <ul>
+                    <li><span>Custom Android App:</span> The recommended way to build a Fire TV app is to use Android tools (like Android Studio and Android frameworks) to build a TV app. Sample code, documentation, and guidelines are available to help you make the most of your apps in the Android documentation. Additionally, see the high-level tutorial Build an Android App for Fire TV. Most apps that work on Android will also work on Fire TV because Fire TV is built on Android. The only difference is with services — for Fire TV, you'll want to use Amazon services instead of Google services (see How Fire TV Development Differs from Android TV Development). Additionally, you'll need to accommodate three different versions of Fire OS:
+                        <ul id="indent-list">
+                            <li>Fire OS 5: Based on Android 5.1 (Lollipop, API level 22)</li>
+                            <li>Fire OS 6: Based on Android 7.1 (Nougat, API level 25)</li>
+                            <li>Fire OS 7: Based on Android 9 (Pie, API level 28)</li>
+                        </ul>
+                    </li>
+                    <li><span>Fire App Builder:</span> Fire App Builder is a robust development framework created by Amazon specifically for producing Fire TV media apps. It is based on Java and uses Android Studio, Gradle, and other tools common to Android development. When you create an app with Fire App Builder, you configure the settings for your data feed, screen layouts, and functionality through a series of JSON files. Similarly, simple config file changes allow you to customize the look and feel of your app with no Java coding. Fire App Builder is designed to help you create high-quality media apps without advanced Java programming, but it is also extensible. If you are comfortable coding in Java, you are free to build on top of Fire App Builder to add more advanced features. See Fire App Builder: A Starter Kit for Java-based Amazon Fire TV and Android Apps for more details.</li>
+                    <li><span>Custom Web App:</span> If you're an <code>HTML5 web developer, </code>you can leverage the Amazon WebView to develop apps and games. You have the option to build HTML5 web apps, Cordova apps using the Fire OS port, or hybrid apps. Learn more.</li>
+                    <li><span>Game App:</span> If you're building a game app, there are many third-party development frameworks that work with <code>Android,</code> so you have lots of alternatives to choose from. If you are proficient using Unity, Cocos2d-x, GameMaker, or one of the many other systems popular among mobile app developers, you will find it straightforward to package your game for Fire TV. If you can produce an .APK file, you can probably install it on Fire TV.</li>
+                    <p>In choosing the right option, consider your skill set. Are you <code>Java-based Android developer, an HTML5/web developer,</code> or a content creator? Choose an approach that aligns with your expertise and app requirements.</p>
+                </ul>
+            </section>
+            <section class="main-section" id="Android_App_Development_for_Amazon_Fire_TV">
+                <h2><a href="#navbar">Android App Development for Amazon Fire TV</a></h2>
+                <p>For Java-based Android developers, Amazon Fire TV uses the same tools, IDEs, and APIs you're already used to for Android development. If you're building your own app from scratch, see these topics:</p>
+                <ul>
+                    <li>Setting Up Your Development Environment: If you're new to Android development, this page helps you get started.</li>
+                    <li>Connecting to Amazon Fire TV Through ADB: Connect your development computer to a Fire TV device over adb.
+                    </li>
+                    <li>Installing and Running Your App: Install, run, and uninstall your app on a Fire TV device for testing before you submit it to the Appstore.</li>
+
+                </ul>
+                <p>If you're an experienced Android developer, also check out this list of what's different about developing on Fire OS.</p>
+            </section>
+            <section class="main-section" id="HTML5_Web_App_Development_for_Amazon_Fire_TV">
+                <h2><a href="#navbar">HTML5 Web App Development for Amazon Fire TV</a></h2>
+                <p>See <a href="https://developer.amazon.com/docs/fire-tv/getting-started-with-web-apps.html" id="inline-link"">Getting Started with Web Apps</a> for tips on building a web app.</p>
+                <p>Amazon Fire TV, including both Fire TV and the Fire TV Stick, supports <code>HTML5</code> web apps. You can port your web app to a new platform and submit it to the Amazon Appstore with minimal effort.</p>
+            </section>
+            <section class="main-section" id="APIs_for_Your_Amazon_Fire_TV_App">
+                <h2><a href="#navbar">APIs for Your Amazon Fire TV App</a></h2>
+                <p>When you build your Amazon Fire TV app, you can also implement other Amazon APIs to provide a more robust experience:</p>
+                <ul>
+                    <li><a href="https://developer.amazon.com/docs/in-app-purchasing/iap-overview.html" id="inline-link">In-App Purchasing API:</a> When customers buy Fire TV devices and register with their Amazon accounts, they are already set up with their Amazon payment profiles and are ready to purchase apps or in-app items with no further effort. Amazon Fire TV and Fire TV Stick support the Amazon In-App Purchasing API, so you can offer consumable items, permanently entitled items, and even subscriptions for sale in your app.</li>
+                    <li><a href="https://developer.amazon.com/docs/fling/understanding-the-amazon-fling-service.html" id="inline-link">Amazon Fling SDK:</a> The Amazon Fling SDK allows customers to fling or cast the screen that appears on their phone or tablet directly onto their television. Extending apps to two screens allows more than one person to engage with your app.</li>
+                </ul>
+                <p>To see more Fire TV APIs and SDKs, see <a href="https://developer.amazon.com/docs/apps-and-games/sdk-downloads.html" id="inline-link">Apps & Games Services SDKs.</a></p>
+            </section>
+            <section class="main-section" id="Device_and_Media_Specifications">
+                <h2><a href="#navbar">Device and Media Specifications</a></h2>
+                <p>If you're looking for information about the media, device, and specifications Amazon Fire TV supports, such as video formats, DRM, codecs, resolution rates, and more, see <a href="https://developer.amazon.com/docs/fire-tv/device-specifications.html" id="inline-link">Fire TV Device Specifications.</a> Detailed developer specifications are available for each device.</p>
+                <p>In general, Fire TV is flexible and provides high performance across a wide range of applications. It has a powerful quad-core CPU and a dedicated GPU. The hardware on the latest Amazon Fire TV offers 2GB RAM, 8GB internal storage, support for 4K video output, support for HDR, and Dolby Atmos audio. These features mean that Fire TV has the muscle to run all sorts of apps and games—streaming media is just one more thing it handles well.</p>
+            </section>
+            <section class="main-section" id="Amazon_Fire_TV_Forums">
+                <h2><a href="#navbar">Amazon Fire TV Forums</a></h2>
+                <p>If you need help, have a question, or want to share other feedback, use the <a href="https://amazon.developer.forums.answerhub.com/spaces/43/Fire+TV+and+Fire+TV+Stick.html">Fire TV and Fire TV Stick categories</a> on the Amazon Developer Forum.</p>
+            </section>
+            <section class="main-section" id="References">
+                <h2><a href="#navbar">References</a></h2>
+                <p>All the information on this page is taken from <a href="https://developer.amazon.com/docs/fire-tv/getting-started-developing-apps-and-games.html" id="inline-link">amazon appstore</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+<footer>
+    <p>&copy; <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"><code>freecodecamp.org</code></a></p>
+    <p>coded by: <a href="https://www.freecodecamp.org/Orion-Mi">Daniel Opio</a></p>
+</footer>
+</html>
